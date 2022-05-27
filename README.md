@@ -1,9 +1,12 @@
 # senseDataTeste
 
 1 - Criação de repositórios
+
 2 - Criação das pastas
-  2.1 - Configurações e instalações de dependências no Cypress
-    2.2 - Irei instalar o cypress localmente na pasta do projeto, executar terminal dentro da pasta.
+
+2.1 - Configurações e instalações de dependências no Cypress
+
+2.2 - Irei instalar o cypress localmente na pasta do projeto, executar terminal dentro da pasta.
 
     npm init -y.         //  (Irá criar uma file package.json para configs)
     npm install cypress  //  (Irá instalar o cypress no projeto, alguns arqs de configs no node_modules)
