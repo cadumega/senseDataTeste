@@ -1,0 +1,8 @@
+{
+    "watchForFileChanges": true,
+    "defaultCommandTimeout": 10000,
+    "viewportWidth": 1600,
+    "viewportHeight": 980,
+    "pluginsFile": false,
+    "chromeWebSecurity": false
+}
