@@ -10,11 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^9.7.0",
-    "cypress-downloadfile": "^1.2.2"
-  },
-  "devDependencies": {
-    "cy-verify-downloads": "^0.1.7",
-    "cypress-file-upload": "^5.0.8"
+    "cypress": "^9.7.0"
   }
 }

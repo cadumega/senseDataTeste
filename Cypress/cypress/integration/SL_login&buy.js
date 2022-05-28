@@ -1,5 +1,12 @@
+// SL_login&buy.js created with Cypress
+//
+// Start writing your Cypress tests below!
+// If you're unfamiliar with how Cypress works,
+// check out the link below and learn how to write your first test:
+// https://on.cypress.io/writing-first-test
+
 /// <reference types="Cypress" />
-import { LoginPageclass } from '../page_objects/objects'
+import { LoginPageclass } from '../pageobjects/objects'
 
 let loginPage = new LoginPageclass()
 
@@ -53,10 +60,11 @@ it('Acesso de login e logout', function () {
     cy.wait(2000)
     cy.get('#back-to-products').click()
 
+
+    
     // Observações :
     // Back to home esta retornando a tela de produtos.
     // Tempo de execução 08.55 , daria para diminuir para 03.40 sem causar erro tirar os wait, coloquei só para demonstrar o teste rodando para algum usuário. 
     // O Robot Framework com Selenium, costuma não acompanhar o tempo de execução do teste e se perde algumas vezes, o Cypress achei com essa performance melhor. Vantagens e desvantagens em cada ferramenta
-    .
 
 })
