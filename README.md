@@ -134,7 +134,7 @@ Padrão de encapsulamento, agrupamento de keywords. (Criar um step de funcionali
 6 -
     
 ## Observações :
-- Tempo de execução 08.59 a 9.50 depende da conexão , é possível diminuir para 03.40 sem causar erro tirar os wait, coloquei só para demonstrar o teste rodando, ver os campos sendo preenchidos e avançando.
+- No Cypress, só executando o que foi pedido no Desafio, tempo de execução 08.59 a 9.50 depende da conexão , é possível diminuir para 03.40 sem causar erro tirar os wait, coloquei só para demonstrar o teste rodando, ver os campos sendo preenchidos e avançando.
     
 - O Robot Framework com Selenium, acredito chegar em um tempo próximo, pois algumas vezes ele se perde ou quebra se for muito rápido ,a se comparar.
 
