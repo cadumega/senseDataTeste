@@ -1,42 +1,13 @@
 # &#x1F539; I) Selenium Teste
 
-Buscar pasta de testes dentro de RobotSelenium e executar o teste SL01_loginbuy.robot
+Realizado o teste automatizado utilizando o framework do Robot Framework com Selenium WebDriver. Fiz também com cypress. Abaixo tem os comandos para executar o teste de diferentes maneiras pelo terminal, mostrando o passo a passo que o robot irá fazer, entre outras opções pensadas e como que interpreto de realizar um determinado tipo de teste automatizado.
+
+## Buscar pasta de testes dentro de RobotSelenium e executar o teste SL01_loginbuy.robot
 
     robot -d logs ./testes/SL01_loginbuy.robot
 
-0 - Ter instalado Python3 e o pip. 
-
-1 - Instalar o Robot e o SeleniumLibrary utilizando os comando abaixo no terminal do seu Mac:
-
-    pip install robotframework
-    pip install robotframework-Selenium2Library
-
-2 - Também precisamos instalar o gerenciador de pacotes Homebrew por ser MAC, pelo terminal:
-
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
-2.1 -  Vamos instalar o driver do navegador que vamos utilizar para rodar nossos testes. 
-
-    brew install chromedriver
-
-2.2 - Caso ocorra erros no chrome driver, verificar:
-## Homebrew 3
-    brew upgrade chromedriver
-
-    brew cask upgrade chromedriver
-
-    brew uninstall chromedriver     
-
-    brew install --cask chromedriver
-
-    chromedriver --version   
-
 ---
-## 3 - Arquivo elements.robot (guardei as variáveis) arquivo ResourceWeb (guardei as keywords).
-
-4 - Executar comando padrão para rodar o teste:
-
-    robot nome-do-seu-arquivo.robot 
+## 2 - Arquivo elements.robot (guardei as variáveis) arquivo ResourceWeb (guardei as keywords).
 
 Fiz algumas adaptações para organizar melhor os arquivos e as pastas. Execução única de um arquivo de teste, mais utilizado para ir criando os steps e verificando na interface do programa sendo executada.
 
@@ -48,25 +19,26 @@ Executar todos os testes da pasta testes:
     
     robot -d logs ./testes
 
-4.1 - Executar sem precisar abrir o navegador, em modo headless e executar todos testes da pasta:
+3.1 - Executar sem precisar abrir o navegador, em modo headless e executar todos testes da pasta:
 
     robot -d logs -v BROWSER:headlesschrome  ./testes/SL01_loginbuy.robot
 
     robot -d logs -v BROWSER:headlesschrome ./testes
 
-4.2 - Executar por [Tags] os casos de testes, no caso iria marcar logo no início do arquivo o comando Tags, para testar um ou outro tipo de categorização:
+3.2 - Executar por [Tags] os casos de testes, no caso iria marcar logo no início do arquivo o comando Tags, para testar um ou outro tipo de categorização:
 
     [Tags]      Incompleto
 
     robot -d logs --include Incompleto ./testes
 
-5 - Criar o teste em si até finalizar a compra, utilizando pageobjects para encapsulamento de variáveis.
+4 - Criar o teste em si até finalizar a compra, utilizando pageobjects para encapsulamento de variáveis.
 
-Finalidade desse tipo de implementação de Padrão Page Object, para mais escalabilidade, mais fácil manutenção.
+:white_check_mark: Finalidade desse tipo de implementação de Padrão Page Object, para mais escalabilidade, mais fácil manutenção.
 
-Padrão de encapsulamento, agrupamento de keywords. (Criar um step de funcionalidade com vários argumentos com conceitos de programação)
+:white_check_mark: Padrão de encapsulamento, agrupamento de keywords. (Criar um step de funcionalidade com vários argumentos com conceitos de programação)
 
-6 - Fiz algumas keywords extras (máximo de evidências), para forçar errors no teste ou na aplicação web, cobrir ao máximos com os elementos disponíveis. 
+## :white_check_mark: 5 - Fiz algumas keywords extras (máximo de evidências), para forçar errors no teste ou na aplicação web, cobrir ao máximos com os elementos disponíveis. 
+
     
 ## Observações :
 - No Cypress, só executando o que foi pedido no Desafio, tempo de execução 08.59 a 9.50 depende da conexão , é possível diminuir para 03.40 sem causar erro tirar os wait, coloquei só para demonstrar o teste rodando, ver os campos sendo preenchidos e avançando.
@@ -79,13 +51,15 @@ Padrão de encapsulamento, agrupamento de keywords. (Criar um step de funcionali
 
 ---
 
-
 # &#x1F539; I) Cypress Teste
 
-obs: executar npx cypress run ou npx cypress open:
+## Executar teste no Cypress, estando com o terminal localizado na pasta integration: 
+Cypress/cypress/integration/SL_login&buy.js
 
-Executar teste em:   
-### Cypress/cypress/integration/SL_login&buy.js
+Executar com uma das seguintes opções:
+
+    npx cypress run 
+    npx cypress open
 
 ---
 1 - Criação de repositórios
